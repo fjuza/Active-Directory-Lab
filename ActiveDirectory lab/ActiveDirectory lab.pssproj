@@ -26,12 +26,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="modules\" />
+    <Folder Include="modules\PSLogging\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="ADObjects.csv" />
     <Compile Include="Build-ADForest.ps1" />
     <Compile Include="Build-ADContent.ps1" />
     <Compile Include="functions.ps1" />
+    <Compile Include="modules\PSLogging\pslogging.psm1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />

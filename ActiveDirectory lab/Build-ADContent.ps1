@@ -5,31 +5,39 @@ $VerbosePreference = "Continue"
 Import-Module PowershellAccessControl
 Import-Module ActiveDirectory
 Import-Module GroupPolicy
+Import-Module $PSScriptRoot\modules\PSLogging\pslogging.psm1
 
 #Import some useful functions
-& 
+& $PSScriptRoot\functions.ps1
 
 ###############################################################################
 $ou = Import-Csv -Path "C:\Users\Administrator\Documents\OrganizationalUnit.csv" -Delimiter ';'
 $groups = Import-Csv "C:\Users\Administrator\Documents\groups.csv" -Delimiter ';'
 $aclList = Import-Csv 'C:\Users\frejuz\Documents\Visual Studio 2015\Projects\ActiveDirectory lab\ActiveDirectory lab\acl.csv' -Delimiter ';'
 
-
+$isCleanDeploy = $False
+#Basic settings
+#To work DOMAIN_DN needs to be correct.
+New-Variable -Name DOMAIN_DN -Value "DC=lab,DC=sp,DC=local" -Visibility Public -Option Constant
+New-Variable -Name BASE_NAME -Value "name" -Visibility Public -Option Constant
+New-Variable -Name BASE_OU -Value "OU=lab" -Visibility Public -Option Constant
 
 ###############################################################################
 ##								  BUILD TREE								 ##
 ###############################################################################
 #Build OUs
-$isFirst = $True
+#Create the base OU.
+New-ADOrganizationalUnit -Name $BASE_NAME -path $DOMAIN_DN -ProtectedFromAccidentalDeletion:$False
+$base_dn = "$BASE_OU,$DOMAIN_DN"
+
 Write-Verbose -Message "Starting to create organizational units in tree."
 $ou | foreach {
     $name = $PSItem.Name
     $ouPath = $PSItem.Path
-    if($isFirst -like $True){
-	    $path = $PSItem.domain
-        $isFirst = $False
+    if($ouPath -like ""){
+	    $path = $base_dn
     } else {
-        $path = "{0},{1}" -f $ouPath,$PSItem.domain
+        $path = "$ouPath,$base_dn" 
     }
 	New-ADOrganizationalUnit -Name $name -Path $path -ProtectedFromAccidentalDeletion:$False
 }
@@ -42,12 +50,15 @@ $sam = Get-Random -Minimum 10000 -Maximum 99999
 #Create Groups
 $groups | foreach {
 	$Name = $PSItem.Name
-	$Path = $PSItem.Path
+	$Path = "{0},{1}" -f $PSItem.Path, $base_dn
 	$GroupCategory = $PSItem.GroupCategory
 	$GroupScope = $PSItem.GroupScope
-    $PSitem | ft Name, Path, GroupScope, GroupCategory -AutoSize
-    New-ADGroup -SamAccountName $sam -Name $PSItem.Name -GroupScope $PSItem.GroupScope -GroupCategory $PSItem.GroupCategory -Path $PSItem.Path
-    $sam++
+	if($isCleanDeploy -eq $False){
+		New-ADGroup -SamAccountName $sam -Name $Name -GroupScope $GroupScope -GroupCategory $GroupCategory -Path $Path
+	} else {
+		New-ADGróup -Name $Name -GroupScope $GroupScope -GroupCategory $GroupCategory -Path $Path
+	}
+   $sam++
 }
 Write-Verbose -Message "All groups created."
 ###############################################################################

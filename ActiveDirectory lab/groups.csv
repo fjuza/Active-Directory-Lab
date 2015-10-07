@@ -1,39 +1,39 @@
-Name;Path;Members;GroupScope;GroupCategory
-Computer Group Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Exchange Administrator;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Exchange User Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Groups Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-High-Impact Server Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Low-Impact Server Managment;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Medium-Impact Server Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Mission-Critical Server Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Lync Administrator;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-RBAC Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Restricted Users Managment;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Role Group Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Servers Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Skype User Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Standard Computers Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Tier Admin Users Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Fileshare Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Distribution Group Managment;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-GPO Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Standard Users Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Users Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Print Service Management;ou=RBAC,OU=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-lab-all;ou=Distribution,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Distribution
-lab-lkpg;ou=Distribution,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Distribution
-lab-sthlm;ou=Distribution,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Distribution
-file_common;ou=fileshare,ou=groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-file_common_ekonomi;ou=fileshare,ou=groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-file_install;ou=fileshare,ou=groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Tier 1 Admins;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Tier 2 Admins;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Tier 3 Admins;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Tier 4 Admins;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-CTO;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Ekonomi;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-HR;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Konsult ISS;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Konsult Linux;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
-Konsult Windows;ou=Role,ou=Groups,OU=lab2,dc=lab,dc=sp,dc=local;;Global;Security
+Name;Path;GroupScope;GroupCategory
+Computer Group Management;ou=RBAC,OU=Groups;Global;Security
+Exchange Administrator;ou=RBAC,OU=Groups;Global;Security
+Exchange User Management;ou=RBAC,OU=Groups;Global;Security
+Groups Management;ou=RBAC,OU=Groups;Global;Security
+High-Impact Server Management;ou=RBAC,OU=Groups;Global;Security
+Low-Impact Server Managment;ou=RBAC,OU=Groups;Global;Security
+Medium-Impact Server Management;ou=RBAC,OU=Groups;Global;Security
+Mission-Critical Server Management;ou=RBAC,OU=Groups;Global;Security
+Lync Administrator;ou=RBAC,OU=Groups;Global;Security
+RBAC Management;ou=RBAC,OU=Groups;Global;Security
+Restricted Users Managment;ou=RBAC,OU=Groups;Global;Security
+Role Group Management;ou=RBAC,OU=Groups;Global;Security
+Servers Management;ou=RBAC,OU=Groups;Global;Security
+Skype User Management;ou=RBAC,OU=Groups;Global;Security
+Standard Computers Management;ou=RBAC,OU=Groups;Global;Security
+Tier Admin Users Management;ou=RBAC,OU=Groups;Global;Security
+Fileshare Management;ou=RBAC,OU=Groups;Global;Security
+Distribution Group Managment;ou=RBAC,OU=Groups;Global;Security
+GPO Management;ou=RBAC,OU=Groups;Global;Security
+Standard Users Management;ou=RBAC,OU=Groups;Global;Security
+Users Management;ou=RBAC,OU=Groups;Global;Security
+Print Service Management;ou=RBAC,OU=Groups;Global;Security
+lab-all;ou=Distribution,ou=Groups;Global;Distribution
+lab-lkpg;ou=Distribution,ou=Groups;Global;Distribution
+lab-sthlm;ou=Distribution,ou=Groups;Global;Distribution
+file_common;ou=fileshare,ou=groups;Global;Security
+file_common_ekonomi;ou=fileshare,ou=groups;Global;Security
+file_install;ou=fileshare,ou=groups;Global;Security
+Tier 1 Admins;ou=Role,ou=Groups;Global;Security
+Tier 2 Admins;ou=Role,ou=Groups;Global;Security
+Tier 3 Admins;ou=Role,ou=Groups;Global;Security
+Tier 4 Admins;ou=Role,ou=Groups;Global;Security
+CTO;ou=Role,ou=Groups;Global;Security
+Ekonomi;ou=Role,ou=Groups;Global;Security
+HR;ou=Role,ou=Groups;Global;Security
+Konsult ISS;ou=Role,ou=Groups;Global;Security
+Konsult Linux;ou=Role,ou=Groups;Global;Security
+Konsult Windows;ou=Role,ou=Groups;Global;Security
