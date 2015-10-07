@@ -210,3 +210,6 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/ActiveDirectory lab/xlsx
+/ActiveDirectory lab/ADObjects.csv
+/ActiveDirectory lab/Backup.xml
