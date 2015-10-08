@@ -36,6 +36,7 @@
     <Compile Include="Build-ADContent.ps1" />
     <Compile Include="functions.ps1" />
     <Compile Include="modules\PSLogging\pslogging.psm1" />
+    <Compile Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
