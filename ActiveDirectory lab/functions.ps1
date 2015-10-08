@@ -43,6 +43,7 @@ function Apply-ACL {
 		New-AccessControlEntry -Principal $principal -AceType AccessAllowed -ActiveDirectoryRights ChangePermissions
 		New-AccessControlEntry -Principal $principal -AceType AccessAllowed -ActiveDirectoryRights WriteProperty
 		New-AccessControlEntry -Principal $principal -AceType AccessAllowed -ActiveDirectoryRights ExtendedRight		
+		New-AccessControlEntry -Principal $Principal -AceType AccessAllowed -ActiveDirectoryRights Self
 	)
 	try{
 		$adObject | Add-AccessControlEntry -AceObject $aces -Force

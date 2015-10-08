@@ -1,28 +1,27 @@
 Name;Path;domain
-lab2;;DC=lab,DC=sp,DC=local
-Groups;ou=lab2;DC=lab,DC=sp,DC=local
-Client Groups;ou=groups,ou=lab2;DC=lab,DC=sp,DC=local
-Distribution;ou=groups,ou=lab2;DC=lab,DC=sp,DC=local
-Fileshare;ou=groups,ou=lab2;DC=lab,DC=sp,DC=local
-RBAC;ou=groups,ou=lab2;DC=lab,DC=sp,DC=local
-Role;ou=groups,ou=lab2;DC=lab,DC=sp,DC=local
-Servers;ou=lab2;DC=lab,DC=sp,DC=local
-Tier 1 Servers;ou=Servers,ou=lab2;DC=lab,DC=sp,DC=local
-Tier 2 Servers;ou=Servers,ou=lab2;DC=lab,DC=sp,DC=local
-Tier 3 Servers;ou=Servers,ou=lab2;DC=lab,DC=sp,DC=local
-Tier 4 Servers;ou=Servers,ou=lab2;DC=lab,DC=sp,DC=local
-Clients;ou=lab2;DC=lab,DC=sp,DC=local
-Expired;ou=clients,ou=lab2;DC=lab,DC=sp,DC=local
-External;ou=clients,ou=lab2;DC=lab,DC=sp,DC=local
-In Use;ou=clients,ou=lab2;DC=lab,DC=sp,DC=local
-Users;ou=lab2;DC=lab,DC=sp,DC=local
-Restricted Users;ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-Service Accounts;ou=Restricted Users,ou=users,ou=lab2;DC=lab,DC=sp,DC=local
-Standard Users;ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-Expired;ou=Standard Users,ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-External;ou=Standard Users,ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-Internal;ou=Standard Users,ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-Tier 1 Admins;ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-Tier 2 Admins;ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-Tier 3 Admins;ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
-Tier 4 Admins;ou=Users,ou=lab2;DC=lab,DC=sp,DC=local
+Groups;;DC=lab,DC=sp,DC=local
+Client Groups;ou=groups;DC=lab,DC=sp,DC=local
+Distribution;ou=groups;DC=lab,DC=sp,DC=local
+Fileshare;ou=groups;DC=lab,DC=sp,DC=local
+RBAC;ou=groups;DC=lab,DC=sp,DC=local
+Role;ou=groups;DC=lab,DC=sp,DC=local
+Servers;;DC=lab,DC=sp,DC=local
+Tier 1 Servers;ou=Servers;DC=lab,DC=sp,DC=local
+Tier 2 Servers;ou=Servers;DC=lab,DC=sp,DC=local
+Tier 3 Servers;ou=Servers;DC=lab,DC=sp,DC=local
+Tier 4 Servers;ou=Servers;DC=lab,DC=sp,DC=local
+Clients;;DC=lab,DC=sp,DC=local
+Expired;ou=clients;DC=lab,DC=sp,DC=local
+External;ou=clients;DC=lab,DC=sp,DC=local
+In Use;ou=clients;DC=lab,DC=sp,DC=local
+Users;;DC=lab,DC=sp,DC=local
+Restricted Users;ou=Users;DC=lab,DC=sp,DC=local
+Service Accounts;ou=Restricted Users,ou=users;DC=lab,DC=sp,DC=local
+Standard Users;ou=Users;DC=lab,DC=sp,DC=local
+Expired;ou=Standard Users,ou=Users;DC=lab,DC=sp,DC=local
+External;ou=Standard Users,ou=Users;DC=lab,DC=sp,DC=local
+Internal;ou=Standard Users,ou=Users;DC=lab,DC=sp,DC=local
+Tier 1 Admins;ou=Users;DC=lab,DC=sp,DC=local
+Tier 2 Admins;ou=Users;DC=lab,DC=sp,DC=local
+Tier 3 Admins;ou=Users;DC=lab,DC=sp,DC=local
+Tier 4 Admins;ou=Users;DC=lab,DC=sp,DC=local

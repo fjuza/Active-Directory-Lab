@@ -4,19 +4,19 @@ Exchange Administrator;ou=RBAC,OU=Groups;Global;Security
 Exchange User Management;ou=RBAC,OU=Groups;Global;Security
 Groups Management;ou=RBAC,OU=Groups;Global;Security
 High-Impact Server Management;ou=RBAC,OU=Groups;Global;Security
-Low-Impact Server Managment;ou=RBAC,OU=Groups;Global;Security
+Low-Impact Server Management;ou=RBAC,OU=Groups;Global;Security
 Medium-Impact Server Management;ou=RBAC,OU=Groups;Global;Security
 Mission-Critical Server Management;ou=RBAC,OU=Groups;Global;Security
 Lync Administrator;ou=RBAC,OU=Groups;Global;Security
 RBAC Management;ou=RBAC,OU=Groups;Global;Security
-Restricted Users Managment;ou=RBAC,OU=Groups;Global;Security
+Restricted Users Management;ou=RBAC,OU=Groups;Global;Security
 Role Group Management;ou=RBAC,OU=Groups;Global;Security
 Servers Management;ou=RBAC,OU=Groups;Global;Security
 Skype User Management;ou=RBAC,OU=Groups;Global;Security
 Standard Computers Management;ou=RBAC,OU=Groups;Global;Security
 Tier Admin Users Management;ou=RBAC,OU=Groups;Global;Security
 Fileshare Management;ou=RBAC,OU=Groups;Global;Security
-Distribution Group Managment;ou=RBAC,OU=Groups;Global;Security
+Distribution Group Management;ou=RBAC,OU=Groups;Global;Security
 GPO Management;ou=RBAC,OU=Groups;Global;Security
 Standard Users Management;ou=RBAC,OU=Groups;Global;Security
 Users Management;ou=RBAC,OU=Groups;Global;Security

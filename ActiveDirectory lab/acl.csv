@@ -1,20 +1,20 @@
 principal;OU
-Groups Management;OU=Groups,ou=lab2,DC=lab,DC=sp,DC=local
-Computer Group Management;OU=Client Groups,ou=groups,ou=lab2,DC=lab,DC=sp,DC=local
-Distribution Group Management;OU=Distribution,ou=groups,ou=lab2,DC=lab,DC=sp,DC=local
-Fileshare Mangement;OU=Fileshare,ou=groups,ou=lab2,DC=lab,DC=sp,DC=local
-RBAC Management;OU=RBAC,ou=groups,ou=lab2,DC=lab,DC=sp,DC=local
-Role Group Management;OU=Role,ou=groups,ou=lab2,DC=lab,DC=sp,DC=local
-Servers Management;OU=Servers,ou=lab2,DC=lab,DC=sp,DC=local
-Low-Impact Server Mangement;OU=Tier 1 Servers,ou=Servers,ou=lab2,DC=lab,DC=sp,DC=local
-Medium-Impact Server Management;OU=Tier 2 Servers,ou=Servers,ou=lab2,DC=lab,DC=sp,DC=local
-High-Impact Server Management;OU=Tier 3 Servers,ou=Servers,ou=lab2,DC=lab,DC=sp,DC=local
-Mission-Critical Server Management;OU=Tier 4 Servers,ou=Servers,ou=lab2,DC=lab,DC=sp,DC=local
-Standard Computers Management;OU=Clients,ou=lab2,DC=lab,DC=sp,DC=local
-Users Management;OU=Users,ou=lab2,DC=lab,DC=sp,DC=local
-Restricted Users Management;OU=Restricted Users,ou=Users,ou=lab2,DC=lab,DC=sp,DC=local
-Standard Users Management;OU=Standard Users,ou=Users,ou=lab2,DC=lab,DC=sp,DC=local
-Tier Admin Users Management;OU=Tier 1 Admins,ou=Users,ou=lab2,DC=lab,DC=sp,DC=local
-Tier Admin Users Management;OU=Tier 2 Admins,ou=Users,ou=lab2,DC=lab,DC=sp,DC=local
-Tier Admin Users Management;OU=Tier 3 Admins,ou=Users,ou=lab2,DC=lab,DC=sp,DC=local
-Tier Admin Users Management;OU=Tier 4 Admins,ou=Users,ou=lab2,DC=lab,DC=sp,DC=local
+Groups Management;OU=Groups
+Computer Group Management;OU=Client Groups,ou=groups
+Distribution Group Management;OU=Distribution,ou=groups
+Fileshare Management;OU=Fileshare,ou=groups
+RBAC Management;OU=RBAC,ou=groups
+Role Group Management;OU=Role,ou=groups
+Servers Management;OU=Servers
+Low-Impact Server Management;OU=Tier 1 Servers,ou=Servers
+Medium-Impact Server Management;OU=Tier 2 Servers,ou=Servers
+High-Impact Server Management;OU=Tier 3 Servers,ou=Servers
+Mission-Critical Server Management;OU=Tier 4 Servers,ou=Servers
+Standard Computers Management;OU=Clients
+Users Management;OU=Users
+Restricted Users Management;OU=Restricted Users,ou=Users
+Standard Users Management;OU=Standard Users,ou=Users
+Tier Admin Users Management;OU=Tier 1 Admins,ou=Users
+Tier Admin Users Management;OU=Tier 2 Admins,ou=Users
+Tier Admin Users Management;OU=Tier 3 Admins,ou=Users
+Tier Admin Users Management;OU=Tier 4 Admins,ou=Users
