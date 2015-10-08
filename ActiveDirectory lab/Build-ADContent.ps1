@@ -14,6 +14,7 @@ $ou = Import-Csv "$PSScriptRoot\OrganizationalUnit.csv" -Delimiter ';'
 $groups = Import-Csv "$PSScriptRoot\groups.csv" -Delimiter ';'
 $aclList = Import-Csv "$PSScriptRoot\acl.csv" -Delimiter ';'
 
+### SET to $False if script is running on a existing domain to create random SamAccountNames for Groups. Note: ACL-creation probably won't work in this version.
 $isCleanDeploy = $True
 $password = ConvertTo-SecureString "123QWEqwe" -AsPlainText -Force
 
