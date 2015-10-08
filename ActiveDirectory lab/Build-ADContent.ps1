@@ -77,6 +77,36 @@ $users = Get-RandomNames -OU $user_ou
 $users | foreach {
 	New-ADUser $PSItem.DisplayName -GivenName $PSItem.GivenName -Surname $PSItem.Surname -SamAccountName $PSItem.SamAccountName -Path $PSItem.OU -AccountPassword $password -Enabled:$true
 }
+
+#Creates one administrator per Tier.
+New-ADUser testes_t1 -samaccountname testes_t1 -Path "OU=Tier 1 Admins,OU=Users,$base_dn" -AccountPassword $password -Enabled:$True
+New-ADUser testes_t2 -samaccountname testes_t2 -Path "OU=Tier 2 Admins,OU=Users,$base_dn" -AccountPassword $password -Enabled:$True
+New-ADUser testes_t3 -samaccountname testes_t3 -Path "OU=Tier 3 Admins,OU=Users,$base_dn" -AccountPassword $password -Enabled:$True
+New-ADUser testes_t4 -samaccountname testes_t4 -Path "OU=Tier 4 Admins,OU=Users,$base_dn" -AccountPassword $password -Enabled:$True
+Add-ADGroupMember "Tier 1 Admins" -Member testes_t1
+Add-ADGroupMember "Computer Group Management" -Member "Tier 1 Admins"
+Add-ADGroupMember "Low-Impact Server Management" -Member "Tier 1 Admins"
+Add-ADGroupMember "Standard Users Management" -Member "Tier 1 Admins"
+Add-ADGroupMember "Distribution Group Management" -Member "Tier 1 Admins"
+
+Add-ADGroupMember "Tier 2 Admins" -Member testes_t2
+Add-ADGroupMember "Medium-Impact Server Management" -Member "Tier 2 Admins"
+Add-ADGroupMember "Restricted Users Management" -Member "Tier 2 Admins"
+Add-ADGroupMember "Fileshare Management" -Member "Tier 2 Admins"
+
+Add-ADGroupMember "Tier 3 Admins" -Member testes_t3
+Add-ADGroupMember "Exchange Administrator" -Member "Tier 3 Admins"
+Add-ADGroupMember "High-Impact Server Management" -Member "Tier 3 Admins"
+Add-ADGroupMember "GPO Management" -Member "Tier 3 Admins"
+Add-ADGroupMember "Role Group Management" -Member "Tier 3 Admins"
+
+Add-ADGroupMember "Tier 4 Admins" -Member testes_t4
+Add-ADGroupMember "Mission-Critical Server Management" -Member "Tier 4 Admins"
+Add-ADGroupMember "Tier Admin Users Management" -Member "Tier 4 Admins"
+Add-ADGroupMember "RBAC Management" -Member "Tier 4 Admins"
+Add-ADGroupMember "Users Management" -Member "Tier 4 Admins"
+Add-ADGroupMember "Exchange Administrator" -Member "Tier 4 Admins"
+
 Write-Verbose -Message "AD is populated."
 ###############################################################################
 ##								  WRITE ACL									 ##
