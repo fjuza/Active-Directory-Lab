@@ -78,7 +78,8 @@ $users | foreach {
 	New-ADUser $PSItem.DisplayName -GivenName $PSItem.GivenName -Surname $PSItem.Surname -SamAccountName $PSItem.SamAccountName -Path $PSItem.OU -AccountPassword $password -Enabled:$true
 }
 
-#Creates one administrator per Tier.
+#this creates one admin per tier.
+#TODO: This needs to be a function rather than a all these lines of code. 
 New-ADUser testes_t1 -samaccountname testes_t1 -Path "OU=Tier 1 Admins,OU=Users,$base_dn" -AccountPassword $password -Enabled:$True
 New-ADUser testes_t2 -samaccountname testes_t2 -Path "OU=Tier 2 Admins,OU=Users,$base_dn" -AccountPassword $password -Enabled:$True
 New-ADUser testes_t3 -samaccountname testes_t3 -Path "OU=Tier 3 Admins,OU=Users,$base_dn" -AccountPassword $password -Enabled:$True

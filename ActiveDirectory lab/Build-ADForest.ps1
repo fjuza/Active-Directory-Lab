@@ -1,4 +1,4 @@
-﻿#Installs Windows Features and configures a new ADDS Forest. DO NOT RUN unless it is needed.
+﻿#Installs Windows Features and configures a new ADDS Forest. Only run if you need to.
 
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 $safeModeAdminPassword = ConvertTo-SecureString "Fiskplask&Korvspad" -AsPlainText -Force

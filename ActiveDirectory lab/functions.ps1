@@ -8,7 +8,6 @@ function Get-RandomNames{
 	$outerText = $content | Select outerText
 	$names = $outerText[8..106]
 	$nHash = @()
-	Write-Verbose -Message "99 problems, a DisplayName aint one."
 	$names.outerText | foreach {
 		$arrName = $PSItem.split(' ')
 		$GivenName = $arrName[0]
